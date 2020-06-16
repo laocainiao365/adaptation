@@ -7,6 +7,16 @@ flutter不同分辨率适配
 在需要使用的地方引入
 ```dart
 import './screendpt.dart';
+
+//在需要使用的组件初始化，并且可以传入设计稿的标准，默认是750
+Widget build(BuildContext context) {
+  LcnScreen.init(750);
+  return Container(
+      width: 200.rpx,
+      height: 200.rpx,
+      color: Colors.red,
+  );
+}
 ```
 - 物理宽度设计稿，使用rpx
 - 像素宽度设计稿，使用px
