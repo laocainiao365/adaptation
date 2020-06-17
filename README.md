@@ -10,7 +10,8 @@ import './screendpt.dart';
 
 //在需要使用的组件初始化，并且可以传入设计稿的标准，默认是750
 Widget build(BuildContext context) {
-  LcnScreen.init(750);
+  LcnScreen.init();//参数默认750
+  LcnScreen.init(822);//传入设计稿的设计尺寸
   return Container(
       width: 200.rpx,
       height: 200.rpx,
